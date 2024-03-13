@@ -1,0 +1,353 @@
+body {
+   margin: 0;
+}
+
+/*============================================= Top Section ===========================================================*/
+/*============================================= Logo, searchbar and functions ===========================================================*/
+.header-main {
+   width: 100%;
+   height: 100px;
+   /* background-color: greenyellow; */
+   display: flex;
+   justify-content: space-between;
+   background-image: url("Image/upper_frame.jpg");
+   background-repeat: no-repeat;
+   /* Prevent image from repeating */
+   background-size: cover;
+   /* Scale image to cover the entire navbar */
+   background-position: center -310px;
+   /* Center the image */
+   background-attachment: fixed;
+   /* Fix the background image relative to the viewport */
+   position: fixed;
+   z-index: 99;
+
+}
+
+.header-main-logo {
+   width: fit-content;
+   height: 100%;
+   /* background-color: yellow; */
+   padding-left: 3vw;
+   display: flex;
+}
+
+
+.header-main-logo img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   object-fit: cover;
+   align-self: center;
+}
+
+
+
+.farmerbackground {
+   position: absolute;
+   top: 15px;
+   left: 130px;
+   border-radius: 10px;
+   background-color: rgba(255, 255, 255, 0.7);
+   width: 80px;
+   height: 17px;
+}
+
+.farmerword {
+   position: absolute;
+   left: 136px;
+   top: 17px;
+   font-size: 12px;
+   font-weight: 800;
+   color: var(--color-gray-200);
+   display: inline-block;
+   width: 46px;
+   height: 17px;
+   font-family: 'Montserrat';
+}
+
+
+.header-main-topNav {
+   margin-left: 5vw;
+   width: fit-content;
+   height: 100%;
+   /* background-color: red; */
+}
+
+.header-main-topNav ul {
+   list-style: none;
+   margin-left: 100px;
+   margin-top: 10px;
+}
+
+.header-main-topNav ul li {
+   display: inline-block;
+   padding-left: 1vw;
+}
+
+/* Adjust the vertical position of img elements inside anchor tags */
+.header-main-topNav ul li a img {
+   width: 80px;
+   height: 80px;
+}
+
+/*============================================= Description and Profile image ===========================================================*/
+.header-main-profile {
+   width: fit-content;
+   height: 100%;
+   /* background-color: blue; */
+   padding-right: 2vw;
+   align-items: center;
+   display: flex;
+   column-gap: 2.5vw;
+   ;
+}
+
+.header-main-profile ul li {
+   list-style: none;
+   font-family: Arial, Helvetica, sans-serif;
+   color: aliceblue;
+   display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.header-main-profile ul li #userName {
+   font-size: 23px;
+   font-weight: 600;
+   margin-bottom: 2.5px;
+   text-align: right;
+}
+
+.header-main-profile ul li #userPhone,
+.header-main-profile ul li #userId {
+   font-size: 13px;
+   font-weight: 500;
+   text-align: right;
+}
+
+
+.header-main-profile-logo img {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+
+.cart-icon {
+   position: absolute;
+   top: 0;
+   margin-top: 40px;
+   margin-left: 1100px;
+   /* You may need to adjust this value */
+   font-size: 35px;
+   color: #000;
+   text-decoration: none;
+}
+
+.cart-icon span {
+   padding: .1rem .6rem;
+   border-radius: .5rem;
+   background-color: #fff;
+   font-size: 30px;
+   margin-left: 10px;
+}
+
+/*============================================= Mid Section ===========================================================*/
+/*============================================= Sidebar ===========================================================*/
+.sidebar {
+   width: 240px;
+   background-color: #f6f0f0;
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   z-index: 99;
+   height: 100%;
+   top: 100px;
+}
+
+.sidebar h3 {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 900;
+}
+
+.sidebar button {
+   background-color: rgb(181, 232, 111);
+   border: none;
+   color: black;
+   font-weight: 900;
+   padding: 10px 20px;
+   width: 200px;
+   text-align: left;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 13px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 15px;
+}
+
+
+/*============================================= Side features ===========================================================*/
+.sidebar-features,
+.sidebar-companyInfo {
+   padding-left: 20px;
+}
+
+.sidebar-companyInfo {
+   padding-top: 25px;
+}
+
+.sidebar-companyInfo a {
+   cursor: pointer;
+}
+
+.sidebar-features .marketPlace,
+.sidebar-features .review,
+.sidebar-features .myPurchase {
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+}
+
+.sidebar-features .marketPlace img,
+.sidebar-features .review img,
+.sidebar-features .myPurchase img {
+   width: 20px;
+   height: 20px;
+}
+
+.marketPlace:hover,
+.review:hover,
+.myPurchase:hover,
+.orderList:hover {
+   background-color: #76a809;
+   /* Change this color to the desired hover color */
+   color: #ffffff;
+   /* Change this color to the desired text color on hover */
+}
+
+/*============================================= Company details ===========================================================*/
+.sidebar-companyInfo {
+   padding-bottom: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 600,
+}
+
+.sidebar-companyInfo h3 {
+   margin-bottom: 5px;
+}
+
+.sidebar-companyInfo-phoneNum,
+.sidebar-companyInfo-email {
+   padding-bottom: 8px;
+}
+
+.sidebar-companyInfo-phoneNum img,
+.sidebar-companyInfo-email img {
+   padding-right: 10px;
+}
+
+
+
+
+
+section {
+   padding: 100px;
+   margin-left: 300px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.heading {
+   text-align: center;
+   font-size: 60px;
+   text-transform: uppercase;
+   color: rgb(31, 58, 19);
+   margin-bottom: 100px;
+   margin-right: 800px;
+   background: linear-gradient(to left, rgba(207, 232, 213, 0.8), rgba(146, 208, 80, 0.8)); /* Lighter and more attractive gradient */
+   padding: 20px;
+   font-family: 'Playfair Display', serif;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   transition: transform 0.3s ease;
+}
+
+.heading:hover {
+   transform: scale(1.05);
+}
+
+
+
+.btn {
+   position: relative; /* Changed 'display' to 'position' */
+   width: fit-content;
+   text-align: center;
+   background: linear-gradient(to right, rgb(66, 212, 241), rgb(25, 165, 236)); /* Gradient background */
+   color: white;
+   font-size: 1.7rem;
+   padding: 10px;
+   border-radius: .5rem;
+   cursor: pointer;
+   margin-top: 1rem;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow */
+   border: 2px solid rgb(66, 212, 241); /* Added border */
+   transition: transform 0.2s ease; /* Added hover transition */
+}
+
+.btn:hover {
+   background-color: black; /* Changed background color on hover */
+   color: rgb(150, 238, 255); /* Changed text color on hover */
+   transform: scale(1.1); /* Added hover animation */
+}
+
+
+
+
+
+.products .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+   /* Changed the column width */
+   gap: 2rem;
+   justify-content: center;
+}
+
+
+.products .box-container .box {
+   text-align: center;
+   padding: 1rem;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   border: black;
+   border-radius: .5rem;
+   border: .1rem solid #999;
+   max-width: 20rem;
+
+}
+
+.products .box-container .box img {
+   height: 100px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+   transition: filter 0.3s ease; /* Add a transition for smooth effect */
+}
+
+.products .box-container .box img:hover {
+   transform: scale(1.2); /* Scale up the image on hover for an interactive effect */
+   transition: transform 0.2s ease; /* Add a smooth transition */
+   filter: none; /* Remove the grayscale effect on hover */
+}
+
+.products .box-container .box h3 {
+   margin: 1rem 0;
+   font-size: 2rem;
+   color: black;
+   height: 60px;
+}
+
+
+.products .box-container .box .price {
+   font-size: 30px;
+   color: black;
+}

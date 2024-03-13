@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;900&family=Poppins:wght@700&family=Press+Start+2P&family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0;
+}
+/*============================================= Top Section ===========================================================*/
+/*============================================= Logo, searchbar and functions ===========================================================*/
+.header-main {
+    width: 100%;
+    height: 100px;
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./farmer_item_pic/upper_frame.jpg");
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-size: cover; /* Scale image to cover the entire navbar */
+    background-position: center -310px; /* Center the image */
+    background-attachment: fixed; /* Fix the background image relative to the viewport */
+}   
+
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    /* background-color: yellow; */
+    padding-left: 3vw;
+    display: flex;
+}
+
+
+.header-main-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+
+
+
+.farmerbackground {
+position: absolute;
+top: 15px;
+left: 130px;
+border-radius: 10px;
+background-color: rgba(255, 255, 255, 0.7);
+width: 50px;
+height: 17px;
+}
+
+.farmerword {
+position: absolute;
+left: 136px;
+top: 17px;
+font-size: 12px;
+font-weight: 800;
+color: var(--color-gray-200);
+display: inline-block;
+width: 46px;
+height: 17px;
+font-family: 'Montserrat';
+}
+
+
+.header-main-topNav {
+    margin-left: 5vw;
+    width: fit-content;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.header-main-topNav ul{
+    list-style: none;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.header-main-topNav ul li {
+    display: inline-block;
+    padding-left: 1vw;
+}
+
+/* Adjust the vertical position of img elements inside anchor tags */
+.header-main-topNav ul li a img {
+    width: 80px;
+    height: 80px;
+}
+
+/*============================================= Description and Profile image ===========================================================*/
+.header-main-profile {
+    width: fit-content;
+    height: 100%;
+    /* background-color: blue; */
+    padding-right: 2vw;
+    align-items: center;
+    display: flex;
+    column-gap: 2.5vw;;
+}
+
+.header-main-profile ul li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.header-main-profile ul li #userName{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 2.5px;
+}
+
+.header-main-profile ul li #userPhone, .header-main-profile ul li #userId{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: right;
+}
+
+
+.header-main-profile-logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*============================================= Mid Section ===========================================================*/
+/*============================================= Sidebar ===========================================================*/
+.sidebar {
+    width: 240px;
+    background-color: #f6f0f0;
+    display: flex;
+    flex-direction: column;
+}  
+
+.sidebar h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.sidebar button{
+    background-color: rgb(181, 232, 111);
+    border: none;
+    color: black;
+    font-weight: 900;
+    padding: 10px 20px;
+    width: 200px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+/*============================================= Side features ===========================================================*/
+.sidebar-features, .sidebar-companyInfo{
+    padding-left: 20px;
+}
+
+.sidebar-companyInfo{
+    padding-top: 25px;
+}
+
+.sidebar-companyInfo a {
+    cursor: pointer;
+}
+
+.sidebar-features .myItem, .sidebar-features .addNewItem, .sidebar-features .customerFeedback,
+.sidebar-features .orderList, .sidebar-features .salesReport {
+    display: flex;
+    align-items: center; 
+    column-gap: 10px;
+}
+
+.sidebar-features .myItem img, .sidebar-features .addNewItem img, .sidebar-features .customerFeedback img,
+.sidebar-features .orderList img, .sidebar-features .salesReport img{
+    width: 30px;
+    height: 30px;
+}
+
+.myItem:hover,
+.addNewItem:hover,
+.customerFeedback:hover,
+.orderList:hover,
+.salesReport:hover {
+    background-color: #76a809; /* Change this color to the desired hover color */
+    color: #ffffff; /* Change this color to the desired text color on hover */
+}
+
+/*============================================= Company details ===========================================================*/
+.sidebar-companyInfo{
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600
+}
+
+.sidebar-companyInfo h3{
+    margin-bottom: 5px;
+}
+
+.sidebar-companyInfo-phoneNum,.sidebar-companyInfo-email{
+    padding-bottom: 8px;
+}
+
+.sidebar-companyInfo-phoneNum img, .sidebar-companyInfo-email img{
+    padding-right: 10px;
+}
+
+
+
+
+
+/* =====================================================add new item whole frame ================================================*/
+/* add new item whole frame */
+/* add new item whole frame */
+
+.content-frame {
+    position: absolute;
+    top: 120px; /* Adjust the top position to align it with the top of the page */
+    left: 260px; /* Adjust the left position to place it beside the left menu */
+    width: 80%; /* Adjust the width as needed */
+    height: 2000px; /* Adjust the height as needed */
+    background-color: transparent; /* Background color of the box */
+    text-align: left;
+  }
+  
+  
+  .tittle-addnewitem{
+    
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-shrink: 0;
+    font-weight: 800;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    left: 3px;
+    text-decoration: underline;
+  }
+    
+  
+  .basicinfo-word{
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-shrink: 0;
+    font-weight: 800;
+    display: inline-block;
+    font-family: 'sans-serif';
+    font-size: 35px;
+    left: 3px;
+  }
+  
+  .productimage-word{
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-shrink: 0;
+    font-weight: 800;
+    font-family: 'sans-serif';
+    font-size: 27px;
+    left: 3px;
+    color: #727272;
+  }
+  
+  
+  .addbutton-container, .videobutton-container,.product-name-container {
+    display: flex;
+  }
+  
+  
+  #addbutton-frame0,#addbutton-frame1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    margin-left: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: transparent;
+    font-weight: bold;
+  
+  }
+  
+  
+  .add-icon {
+    width: 80px; /* Adjust the size of the icon as needed */
+    height: auto; /* Adjust the size of the icon as needed */
+    border: 5px dashed  #3498db; /* Add a 2px solid border with a color of your choice */
+    border-radius: 0;
+    padding: 10px;
+  }
+  
+  .cover-photo-word {
+    margin-top: 2px; /* Adjust the spacing between the icon and text */
+    color: #727272;
+    font-family: 'sans-serif';
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  
+.addbutton-frame2{
+    margin-left: 55px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+
+
+
+  .productvideo-word{
+    margin-top: 80px;
+    margin-left: 30px;
+    flex-shrink: 0;
+    font-weight: 800;
+    font-family: 'sans-serif';
+    font-size: 27px;
+    left: 3px;
+    color: #727272;
+  }
+  
+  
+  .videobutton-frame0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    margin-left: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: transparent;
+    font-weight: bold;
+  }
+  
+  .video-note{
+    margin-top: 30px;
+    margin-left: 50px;
+    flex-shrink: 0;
+    font-weight: 800;
+    font-family: 'sans-serif';
+    font-size: 18px;
+    color: #727272;
+  }
+  
+  #product-name-input {
+    width: 85%;
+    height: 50px;;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    border-color: #727272;
+    outline: none;
+    text-align: left;
+    font-size: 25px;
+    margin-top: 70px;
+  }
+  
+  
+  .product-description-container, .product-price-container, .product-stock-container, .product-weight-container {
+      display: flex;
+  }
+  
+  
+  #product-description-input {
+      width: 95%;
+      height: 160px; /* Set an initial height */
+      margin-left: 70px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      border-color: #727272;
+      outline: none;
+      font-size: 25px;
+      margin-top: 70px;
+      resize: vertical; /* Allow vertical resizing */
+      overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+  
+  }
+  
+  
+  
+  .salesinfo-word{
+    margin-top: 90px;
+    margin-left: 30px;
+    flex-shrink: 0;
+    font-weight: 800;
+    display: inline-block;
+    font-family: 'sans-serif';
+    font-size: 35px;
+    left: 3px;
+  }
+  
+  .productprice-word{
+  margin-top: 70px;
+  margin-left: 30px;
+  flex-shrink: 0;
+  font-weight: 800;
+  font-family: 'sans-serif';
+  font-size: 27px;
+  left: 3px;
+  color: #727272;
+  }
+  
+  
+  #product-price{
+    width: 20%;
+    height: 50px;
+    margin-top: 60px;
+    margin-left: 50px;
+    border-radius: 8px;
+    font-family: 'sans-serif';
+    font-size: 27px;
+    text-align: right;
+    padding-inline-end: 10px;
+  }
+  
+  
+  #product-stock{
+    width: 20%;
+    height: 50px;
+    margin-top: 60px;
+    margin-left: 118px;
+    border-radius: 8px;
+    font-family: 'sans-serif';
+    font-size: 27px;
+    text-align: right;
+    padding-inline-end: 10px;
+  }
+  
+  
+  
+  #product-weight{
+    width: 20%;
+    height: 50px;
+    margin-top: 60px;
+    margin-left: 50px;
+    border-radius: 8px;
+    font-family: 'sans-serif';
+    font-size: 27px;
+    text-align: right;
+    padding-inline-end: 10px;
+  }
+  
+  
+  
+  
+  /* product submit and reset button container */
+  .product-button-container {
+    display: flex;
+    gap: 20px; 
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 50px;
+  }
+  
+  
+  .submit-button{
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    font-size: 27px;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+    background-color: #199525;
+  
+  }
+  
+  
+  .submit-button:hover {
+    background-color: #01dd8c; /* New background color on hover */
+  }
+  
+  .reset-button{
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    font-size: 27px;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+    background-color: #b10000;
+  }
+  
+  .reset-button:hover {
+    background-color: #ea0065; /* New background color on hover */
+  }
+
+
+  input[type=text]:focus:valid{
+    background-color: #8ff0cc;
+  }
+  
+  input[type=text]:focus:invalid{
+    background-color: #f0664e;
+  }
+  

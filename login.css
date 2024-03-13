@@ -1,0 +1,104 @@
+body{
+    background-image: url("./images/login_out_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 960px) {
+    .sign-in-container {
+        transform: translateX(-25%); /* Center container */
+    }
+}
+
+.form-error {
+    color: red; /* You can choose your preferred text color */
+    font-weight: bold; /* You can make error messages bold */
+}
+
+/* Style for form success messages */
+.form-success {
+    color: lightgreen; /* You can choose your preferred text color */
+    font-weight: bold; /* You can make success messages bold */
+}
+
+
+.sign-in-container {
+    position: relative;
+    border: 2px solid;
+    width: 500px;
+    left: 33vw;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(75, 117, 75, 0.8); /* green with 80% opacity */
+    transition: border-radius 0.3s ease; /*change radius with 0.3 duration*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sign-in-container .sign-in-container-logo img{
+    height: 180px;
+}
+
+.sign-in-container .sign-in-container-logo h3{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.sign-in-container .sign-in-container-main input {
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 230px; /* Set input width */
+    height: 30px; /* Set input height */
+    padding: 5px; /* Add padding to input */
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 10px; /* Add spacing below input */
+}
+
+.sign-in-container .sign-in-container-rememberMe {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px; /* Add spacing below input */
+}
+
+.sign-in-container input[type="submit"] {
+    margin-left: 10px;
+    border-radius: 10px;
+    width: fit-content; /* Set input width */
+    height: 30px; /* Set input height */
+    padding: 5px; /* Add padding to input */
+    font-size: 14px; /* Adjust font size */
+} 
+
+.sign-in-container .askHelp {
+    color: white;
+}
+
+.sign-in-container .askHelp a{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*========================= Pseudoclass ===========================================================================================================*/
+.sign-in-container:hover{
+    border-radius: 100px;
+}
+
+.sign-in-container .askHelp a:active{
+    color:blue;
+}
+
+.sign-in-container .sign-in-container-main input:hover, .sign-in-container input[type="submit"]:hover{
+    border: 2px solid lightskyblue; /* Change to your desired color */
+}
+
+.sign-in-container .sign-in-container-main input:focus{
+    border: 5px solid grey; /* Change to your desired color */
+}

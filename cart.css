@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+}
+
+/*============================================= Top Section ===========================================================*/
+/*============================================= Logo, searchbar and functions ===========================================================*/
+.header-main {
+    width: 100%;
+    height: 100px;
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: space-between;
+    background-image: url("Image/upper_frame.jpg");
+    background-repeat: no-repeat;
+    /* Prevent image from repeating */
+    background-size: cover;
+    /* Scale image to cover the entire navbar */
+    background-position: center -310px;
+    /* Center the image */
+    background-attachment: fixed;
+    /* Fix the background image relative to the viewport */
+    position: fixed;
+    z-index: 99;
+
+}
+
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    /* background-color: yellow; */
+    padding-left: 3vw;
+    display: flex;
+}
+
+
+.header-main-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+
+
+
+.farmerbackground {
+    position: absolute;
+    top: 15px;
+    left: 130px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 80px;
+    height: 17px;
+}
+
+.farmerword {
+    position: absolute;
+    left: 136px;
+    top: 17px;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--color-gray-200);
+    display: inline-block;
+    width: 46px;
+    height: 17px;
+    font-family: 'Montserrat';
+}
+
+
+.header-main-topNav {
+    margin-left: 5vw;
+    width: fit-content;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.header-main-topNav ul {
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.header-main-topNav ul li {
+    display: inline-block;
+    padding-left: 1vw;
+}
+
+/* Adjust the vertical position of img elements inside anchor tags */
+.header-main-topNav ul li a img {
+    width: 80px;
+    height: 80px;
+}
+
+/*============================================= Description and Profile image ===========================================================*/
+.header-main-profile {
+    width: fit-content;
+    height: 100%;
+    /* background-color: blue; */
+    padding-right: 2vw;
+    align-items: center;
+    display: flex;
+    column-gap: 2.5vw;
+    ;
+}   
+
+.header-main-profile ul li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.header-main-profile ul li #userName {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 2.5px;
+    text-align: right;
+}
+
+.header-main-profile ul li #userPhone,
+.header-main-profile ul li #userId {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: right;
+}
+
+
+.header-main-profile-logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.cart-icon {
+    position: absolute;
+    top: 0;
+    margin-top: 40px;
+    margin-left: 1100px;
+    /* You may need to adjust this value */
+    font-size: 35px;
+    color: #000;
+    text-decoration: none;
+}
+
+.cart-icon span {
+    padding: .1rem .6rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif; /* Make sure to import the font */
+    margin-bottom: 2rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+.btn,
+.option-btn,
+.delete-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(54, 181, 206);
+    color: white;
+    font-size: 1.7rem;
+    padding: 1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover {
+    background-color: hsl(53, 91%, 49%);
+}
+
+.option-btn i,
+.delete-btn i {
+    padding-right: .5rem;
+}
+
+.option-btn {
+    background-color: orange;
+}
+
+.delete-btn {
+    margin-top: 0;
+    background-color: red;
+}
+
+
+
+
+.shopping-cart table {
+    text-align: center;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.shopping-cart table thead th {
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+}
+
+.shopping-cart table tr td {
+    border-bottom: .1rem solid #999;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.shopping-cart table input[type="number"] {
+    border: .1rem solid #999;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: black;
+    width: 10rem;
+}
+
+.shopping-cart table input[type="submit"] {
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: orange;
+    color: white;
+}
+
+.shopping-cart table input[type="submit"]:hover {
+    background-color: hsl(53, 91%, 49%);
+}
+
+.shopping-cart table .table-bottom {
+    background-color: #eee;
+}
+
+.shopping-cart .checkout-btn {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.shopping-cart .checkout-btn a {
+    display: inline-block;
+    width: auto;
+}
+
+.shopping-cart .checkout-btn a.disabled {
+    pointer-events: none;
+    opacity: .5;
+    user-select: none;
+    background-color: red;
+}

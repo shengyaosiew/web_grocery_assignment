@@ -1,0 +1,188 @@
+body{
+    background-image: url("./images/login_out_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 960px) {
+    .select-role .select-role-container, .sign-up .sign-up-container{
+        transform: translateX(-25%); /* Center container */
+    }
+}
+
+
+/*======================== select role container ==========================================================================================================*/
+.select-role .select-role-container{
+    position: relative;
+    border: 2px solid;
+    width: 500px;
+    left: 33vw;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(75, 117, 75, 0.8); /* green with 80% opacity */
+    transition: border-radius 0.3s ease; /*change radius with 0.3 duration*/
+    display: flex;
+    flex-direction: column;
+}
+
+.select-role .select-role-container a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*======================== company info ==========================================================================================================*/
+.select-role .select-role-container .companyLogo{
+    margin-left: 0px;
+}
+
+.select-role .select-role-container .companyLogo img{
+    height: 180px;
+}
+
+.select-role .select-role-container .companyLogo p{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+/*======================== roles info==========================================================================================================*/
+.select-role .select-role-container .rolesLogo{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+    gap: 60px;
+}
+
+.select-role .select-role-container .rolesLogo {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.select-role .select-role-container .rolesLogo img{
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+/*======================== ask sign in ==========================================================================================================*/
+.select-role .select-role-container .askSignIn{
+    color: white;
+    margin-left: 40px;
+    margin-top: 160px;
+}
+
+.select-role .select-role-container .askSignIn a{
+    color: black;
+}
+
+/*======================== NEXT SECTION ==========================================================================================================*/
+/*======================== sign up as seller container ==========================================================================================================*/
+.sign-up .sign-up-container{
+    position: relative;
+    border: 2px solid;
+    width: 500px;
+    left: 33vw;
+    margin-top: 80px;
+    text-align: center;
+    background-color: rgba(75, 117, 75, 0.8); /* green with 80% opacity */
+    transition: border-radius 0.3s ease; /*change radius with 0.3 duration*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+/*======================== sign up as seller and buyer ==========================================================================================================*/
+.sign-up .sign-up-container{
+    position: relative;
+    border: 2px solid;
+    width: 500px;
+    left: 33vw;
+    margin-top: 80px;
+    text-align: center;
+    background-color: rgba(75, 117, 75, 0.8); /* green with 80% opacity */
+    transition: border-radius 0.3s ease; /*change radius with 0.3 duration*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.sign-up .sign-up-container .top{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.sign-up .sign-up-container .top h3{
+    color: white;
+}
+
+.sign-up .sign-up-container .main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sign-up .sign-up-container .main label {
+    color: white;
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 10px; /* Add spacing below label */
+}
+  
+  /* Adjust input size */
+.sign-up .sign-up-container .main input,.sign-up .sign-up-container .main textarea {
+    margin-left: 150px;
+    border-radius: 10px;
+    width: 200px; /* Set input width */
+    height: 30px; /* Set input height */
+    padding: 5px; /* Add padding to input */
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 10px; /* Add spacing below input */
+}
+
+.sign-up .sign-up-container input[type="submit"]{
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.sign-up .sign-up-container .askSignIn{
+    color: white;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.sign-up .sign-up-container .askSignIn a{
+    color: black;
+}
+
+/*======================== pseudoclass ==========================================================================================================*/
+.select-role-container:hover,
+.sign-up-container:hover{ 
+    border-radius: 100px;
+}
+
+.select-role .select-role-container a:active,
+.sign-up .sign-up-container a:active{
+    color: blue;
+}
+
+.sign-up .sign-up-container input:hover{
+    border: 2px solid lightskyblue; /* Change to your desired color */
+}
+
+.sign-up .sign-up-container input:focus{
+    border: 5px solid grey; /* Change to your desired color */
+}

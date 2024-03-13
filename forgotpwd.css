@@ -1,0 +1,108 @@
+body{
+    background-image: url("./images/login_out_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 960px) {
+    .forgotpwd-container {
+        transform: translateX(-25%); /* Center container */
+    }
+}
+
+.form-error {
+    color: red; 
+    font-weight: bold; 
+}
+
+/* Style for form success messages */
+.form-success {
+    color: lightgreen; 
+    font-weight: bold; 
+}
+
+
+
+.forgotpwd-container {
+    position: relative;
+    border: 2px solid;
+    width: 500px;
+    left: 35vw;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgba(75, 117, 75, 0.8); /* green with 80% opacity */
+    transition: border-radius 0.3s ease; /*change radius with 0.3 duration*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.forgotpwd-container .forgotpwd-container-logo img{
+    height: 180px;
+}
+
+.forgotpwd-container .forgotpwd-container-logo h3{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 1.5vw;
+}
+
+.forgotpwd-container .forgotpwd-container-main input {
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 230px; /* Set input width */
+    height: 30px; /* Set input height */
+    padding: 5px; /* Add padding to input */
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 20px; /* Add spacing below input */
+}
+
+.forgotpwd-container .forgotpwd-container-rememberMe {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px; /* Add spacing below input */
+}
+
+.forgotpwd-container input[type="submit"] {
+    margin-left: 10px;
+    border-radius: 10px;
+    width: fit-content; /* Set input width */
+    height: 30px; /* Set input height */
+    padding: 5px; /* Add padding to input */
+    font-size: 14px; /* Adjust font size */
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+.forgotpwd-container .askHelp {
+    color: white;
+}
+
+.forgotpwd-container .askHelp a{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*========================= Pseudoclass ===========================================================================================================*/
+.forgotpwd-container:hover{
+    border-radius: 100px;
+}
+
+.forgotpwd-container .askHelp a:active{
+    color:blue;
+}
+
+.forgotpwd-container .forgotpwd-container-main input:hover, .forgotpwd-container input[type="submit"]:hover{
+    border: 2px solid lightskyblue; /* Change to your desired color */
+}
+
+.forgotpwd-container .forgotpwd-container-main input:focus{
+    border: 5px solid grey; /* Change to your desired color */
+}

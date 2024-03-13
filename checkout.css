@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+}
+/*============================================= Top Section ===========================================================*/
+/*============================================= Logo, searchbar and functions ===========================================================*/
+.header-main {
+    width: 100%;
+    height: 100px;
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./Image/upper_frame.jpg");
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-size: cover; /* Scale image to cover the entire navbar */
+    background-position: center -310px; /* Center the image */
+    background-attachment: fixed; /* Fix the background image relative to the viewport */
+}   
+
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    /* background-color: yellow; */
+    padding-left: 3vw;
+    display: flex;
+}
+
+
+.header-main-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+
+
+
+.farmerbackground {
+position: relative;
+top: 15px;
+border-radius: 10px;
+background-color: rgba(255, 255, 255, 0.7);
+width: 90px;
+height: 17px;
+}
+
+.farmerword {
+position: absolute;
+margin-left: 10px;
+font-size: 12px;
+font-weight: 800;
+color: var(--color-gray-200);
+width: 46px;
+height: 17px;
+font-family: 'Montserrat';
+}
+
+
+.header-main-topNav {
+    width: fit-content;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.header-main-topNav ul{
+    list-style: none;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.header-main-topNav ul li {
+    display: inline-block;
+    padding-left: 1vw;
+}
+
+/* Adjust the vertical position of img elements inside anchor tags */
+.header-main-topNav ul li a img {
+    width: 80px;
+    height: 80px;
+}
+
+/*============================================= Description and Profile image ===========================================================*/
+.header-main-profile {
+    width: fit-content;
+    height: 100%;
+    /* background-color: blue; */
+    padding-right: 2vw;
+    align-items: center;
+    display: flex;
+    column-gap: 2.5vw;;
+}
+
+.header-main-profile ul li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.header-main-profile ul li #userName{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 2.5px;
+}
+
+.header-main-profile ul li #userPhone, .header-main-profile ul li #userId{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: right;
+}
+
+
+.header-main-profile-logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*============================================= Main ===========================================================*/
+.main-container {
+    background-color: lightgrey;
+    height: 500px;
+    display: flex;
+    width: 600px;
+    margin-left: 33vw;
+    margin-top: 5vh;
+}
+
+@media (max-width: 960px) {
+    .main-container {
+        transform: translateX(-25%); /* Center container */
+    }
+}
+
+.main-container .main-content{
+    padding-left: 15px;
+    padding-top: 15px;
+}   
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Optional spacing between form groups */
+    margin-bottom: 20px;
+}
+
+/* Style labels and inputs */
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 200px; /* Make inputs/selections fill the entire width of the form group */
+}
+
+.left-content input[type="submit"]{
+    margin-top: 50px;
+    margin-left: 220px;
+    padding: 5px;
+}
+
+.left-content #back-button{
+    margin-bottom: 40px;
+}
+
+
+.left-content {
+    float: left;
+    width: 50%;
+    text-align: left; /* Align elements to the left */
+}
+
+
+.right-content {
+    flex-direction: row;
+    margin-top: 60px;
+    float: right;
+    width: 50%; 
+    text-align: right; /* Align elements to the right */
+}
+
+.right-content label{
+    margin-left: 80px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 3px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+
+#item-bought label {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#total-price p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+
+#total-price p span {
+    font-weight: normal;
+    font-size: 16px;
+    color: darkred;
+}
+
+
+
+
